@@ -1,0 +1,287 @@
+body {
+	background-color: rgb(25,25,25);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	background-color: lightgrey;
+}
+
+img {
+	max-width: 400px;
+}
+
+.right {
+	float: right;
+}
+
+.pure-button {
+	width: 35%;
+	margin-top: 40px;
+}
+
+h1 {
+	color: white;
+	font-style: normal;
+	padding: 10px;
+}
+
+h2 {
+	display: block;
+}
+
+.splash {
+	margin: 10%;
+}
+
+
+.splashcontainer {
+	background-color: black;
+	background-image: url(../img/darkness.png);
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	/*position: absolute;*/
+	width: 100%;
+}
+
+
+.pure-img {
+	height: 0px;
+	width: 0px;
+	border-left: 30px solid transparent;
+  	border-right: 30px solid transparent;  
+  	border-top: 25px solid #00FF02;
+  	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1.2s;
+	/*padding-top: 20px;*/
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+@keyframes example {
+    0%   {border: none;}
+    20%  {background-color: #00FF02;}
+    25%  {background-color: #00FF02;}
+    40%  {background-color: #00FF00;}
+    50%  {background-color: #00FF02;}
+    60%  {background-color: #00FF00;}
+    65%  {background-color: #00FF02;}
+    75%  {background-color: #00FF02;}
+    85%  {background-color: #00FF00;}
+    90%  {background-color: #00FF00;}
+    100% {background-color: #00FF02;}
+}
+
+.personal-info {
+	background-color: #f45642;
+	min-width: 400px;
+}
+
+.personal-info h2,
+p {
+	padding: 0 40px;
+}
+
+.educational-background {
+	background-color: grey;
+	display: block;
+	float: left;
+	/*float: right;*/
+	clear: both;
+	min-width: 400px;
+}
+
+/*.educational-background ul li{
+	display: inline-block;
+}*/
+
+.work-experience {
+	background-color: #f2ef54;
+	display: block;
+	float: right;
+	color: black;
+	min-width: 400px;
+}
+
+.skills {
+	background-color: #1db7b7;
+	display: block;
+	color: #42412d;
+	min-width: 400px;
+}
+
+.projects {
+	display: block;
+	background-color: black;
+	max-width: 400px;
+}
+
+.contact {
+	background-color: white;
+	color: black;
+	display: block;
+	min-width: 400px;
+}
+
+footer {
+	text-align: center;
+	margin: 20px;
+}
+
+/*------------typewriter effect------------------------------*/
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  /*min-height: 100%;*/
+  /*overflow: hidden;*/
+}
+
+/*body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}*/
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*----------------------------------------------*/
+
+/*body {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  margin: 10px 50px; 
+  /*letter-spacing: 6px; 
+  font-weight: bold;
+}*/
+
+body {
+	font-family: 'Anonymous Pro', monospace;
+	font-style: none;
+}
+
+/*----------------social media------------------------------*/
+
+svg {
+  display:inline-block;
+  height:7vw; max-height:35px;
+  width:auto;
+  stroke:#f45642;
+  stroke-width:30;
+  fill:none;
+}
+#tw {stroke-dasharray:  300 , 0, 3000;}
+#st {stroke-dasharray:    0 , 0, 2300;}
+#fa {stroke-dasharray:    0 , 0, 2900;}
+#co {stroke-dasharray:  300 , 0, 3000;}
+#px {stroke-dasharray: 3200 , 0, 3000;}
+
+svg:hover #tw { animation: tw .7s; }
+svg:hover #st { animation: st .7s; }
+svg:hover #fa { animation: fa .7s; }
+svg:hover #co { animation: co .7s; }
+svg:hover #px { animation: px .7s; }
+
+@keyframes tw { 10% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:3300, 500, 3000;} }
+@keyframes st { 10% {stroke-dasharray:    0, 500, 2300} 100% { stroke-dasharray:2300, 500, 2300;} }
+@keyframes fa { 10% {stroke-dasharray:    0, 500, 2900} 100% { stroke-dasharray:2900, 500, 2900;} }
+@keyframes co { 10% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:2300, 500, 3000;} }
+@keyframes px { 10% {stroke-dasharray: 3200, 500, 3000} 100% { stroke-dasharray:6200, 500, 3000;} }
+
+
+/*--------------------animation---------------------------*/
+
+.x7 {
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width:inherit;
+    height:500px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    
+    background-image:url(../img/chasingsheep.png);
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    background-position:50% 50%;
+    
+    border-width:50px;
+    border-color:rgba(0,0,0,0);
+    
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    transition:0.5s ease;
+}
+
+a:hover {
+    border-width:0;
+    border-color:rgba(0,0,0,0.5);
+}
+
+a.one {border-style:solid;}
+a.two {border-style:dashed;}
+a.san {border-style:dotted;}
+
+
+a.yon       {border:50px solid  rgba(0,0,0,0.7);}
+a.goo       {border:50px dashed rgba(0,0,0,0.7);}
+a.rok       {border:50px dotted rgba(0,0,0,0.7);}
+a.ryk       {border:50px double rgba(0,0,0,0.7);}
+a.yon:hover {border: 1px solid  rgba(0,0,0,0.7);}
+a.goo:hover {border: 1px dashed rgba(0,0,0,0.7);}
+a.rok:hover {border: 1px dotted rgba(0,0,0,0.7);}
+a.ryk:hover {border: 1px double rgba(0,0,0,0.7);}
+
+
+a.x7,
+a.x8,
+a.x9 {
+    -webkit-border-radius:0;
+	-moz-border-radius:0;
+    border-radius:0;
+}
+a.x7       {border:300px solid  rgba(0,0,0,0.7);}
+a.x8       {border:50px dashed rgba(0,0,0,0.7);}
+a.x9       {border:50px dotted rgba(0,0,0,0.7);}
+a.x7:hover {border: 1px solid  rgba(0,0,0,0.7);}
+a.x8:hover {border: 1px dashed rgba(0,0,0,0.7);}
+a.x9:hover {border: 1px dotted rgba(0,0,0,0.7);}
