@@ -3,6 +3,12 @@ body {
 	color: white;
 }
 
+/*button {
+  width: 35%;
+  margin: 40px;
+  border-radius: 10px;
+}*/
+
 a {
 	text-decoration: none;
 }
@@ -11,8 +17,22 @@ nav {
 	background-color: lightgrey;
 }
 
-img {
-	max-width: 400px;
+.pure-menu {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#menuLink1 {
+  margin-right: 20px;
+}
+
+.img {
+	width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  /*margin: 40px auto;*/
+  border: 2px solid white;
+  float: left;
 }
 
 .right {
@@ -22,6 +42,7 @@ img {
 .pure-button {
 	width: 35%;
 	margin-top: 40px;
+  border-radius: 10px;
 }
 
 h1 {
@@ -40,17 +61,18 @@ h2 {
 
 
 .splashcontainer {
+  position: relative;
 	background-color: black;
 	background-image: url(../img/darkness.png);
 	color: white;
 	text-align: center;
 	font-size: 24px;
-	/*position: absolute;*/
 	width: 100%;
+  min-height: 100%;
 }
 
 
-.pure-img {
+.grnarrow {
 	height: 0px;
 	width: 0px;
 	border-left: 30px solid transparent;
@@ -82,21 +104,39 @@ h2 {
 
 .personal-info {
 	background-color: #f45642;
-	min-width: 400px;
+	max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
 }
 
-.personal-info h2,
+.personal-info h2 {
+  text-align: center;
+}
+
+/*.personal-info h2,
 p {
-	padding: 0 40px;
+  padding: 0 40px;
+}*/
+
+.work-experience {
+  /*padding: 5px;*/
+  text-align: center;
+}
+
+.educational-background {
+	/*padding: 5px;*/
+  text-align: center;
 }
 
 .educational-background {
 	background-color: grey;
 	display: block;
-	float: left;
-	/*float: right;*/
-	clear: both;
-	min-width: 400px;
+	/*min-width: 400px;
+  max-width: 400px;*/
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /*.educational-background ul li{
@@ -106,29 +146,45 @@ p {
 .work-experience {
 	background-color: #f2ef54;
 	display: block;
-	float: right;
 	color: black;
-	min-width: 400px;
+	/*min-width: 400px;
+  max-width: 400px;*/
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .skills {
 	background-color: #1db7b7;
 	display: block;
 	color: #42412d;
-	min-width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .projects {
 	display: block;
 	background-color: black;
 	max-width: 400px;
+  margin: 0 auto;
+}
+
+.projectsimg {
+  width: 100%;
 }
 
 .contact {
 	background-color: white;
 	color: black;
 	display: block;
-	min-width: 400px;
+	max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  /*height: 100%;*/
+  text-align: right;
+  /*padding: 10px;*/
+  /*float: left;*/
 }
 
 footer {
